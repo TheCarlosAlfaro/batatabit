@@ -6,6 +6,8 @@
 5. Other
  */
 
+/* VARIABLES */
+
 :root {
 	/* colores */
 	--bitcoin-orange: #f7931a;
@@ -24,6 +26,8 @@
 	);
 }
 
+/* GLOBAL STYLES */
+
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -34,6 +38,8 @@ html {
 	font-size: 62.5%;
 	font-family: "DM Sans", sans-serif;
 }
+
+/* HEADER */
 
 header {
 	position: relative;
@@ -112,6 +118,8 @@ main {
 	background-color: var(--off-white);
 }
 
+/* MAIN EXCHANGE SECTION */
+
 .main-exchange-container {
 	width: 100%;
 	height: auto;
@@ -172,6 +180,8 @@ main {
 	line-height: 2.3rem;
 	color: var(--bitcoin-orange);
 }
+
+/* MAIN TABLES SECTION */
 
 .currency-table--title,
 .commissions-table--title {
@@ -291,3 +301,5 @@ main {
 	font-weight: 300;
 	color: var(--warm-black);
 }
+
+/* MAIN PRODUCT DETAILS */

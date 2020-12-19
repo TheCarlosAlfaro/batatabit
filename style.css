@@ -179,7 +179,9 @@ main {
 	min-width: 235px;
 	max-width: 500px;
 	height: 360px;
-	margin: 0 auto;
+	margin: 0;
+	margin-left: calc(50% - (70% / 2));
+	justify-content: space-around;
 	font-family: "Inter", sans-serif;
 }
 

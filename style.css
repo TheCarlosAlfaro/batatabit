@@ -162,8 +162,19 @@ main {
 	color: #757575;
 }
 
+/* MAIN TABLES SECTION */
+
+.main-tables-container {
+	display: flex;
+	min-height: 350px;
+	overflow-x: scroll;
+	overscroll-behavior-x: contain;
+	scroll-snap-type: x proximity;
+}
+
 .main-currency-table,
 .main-commissions-table {
+	scroll-snap-align: center;
 	width: 70%;
 	min-width: 235px;
 	max-width: 500px;
@@ -180,8 +191,6 @@ main {
 	line-height: 2.3rem;
 	color: var(--bitcoin-orange);
 }
-
-/* MAIN TABLES SECTION */
 
 .currency-table--title,
 .commissions-table--title {
@@ -390,6 +399,8 @@ main {
 	line-height: 1.8rem;
 	color: #808080;
 }
+
+/* IMAGE SECTION */
 .bitcoin-img-container {
 	width: 100%;
 	min-width: 320px;
@@ -407,6 +418,8 @@ main {
 	line-height: 2.6rem;
 	color: var(--just-white);
 }
+
+/* PLANS SECTION */
 .main-plans-container {
 	width: 100%;
 	min-width: 320px;
@@ -445,10 +458,10 @@ main {
 	position: relative;
 	scroll-snap-align: center;
 	width: 70%;
-	min-width: 230px;
+	min-width: 190px;
 	max-width: 300px;
 	height: 250px;
-	margin: 50px 4px 0;
+	margin: 50px 5px 0;
 	padding: 0 15px;
 	background-color: var(--just-white);
 	border-radius: 15px;
@@ -511,4 +524,31 @@ main {
 	height: 20px;
 	background-image: url("./assets/icons/orange-right-arrow.svg");
 	vertical-align: text-bottom;
+}
+
+/* FOOTER */
+footer {
+	display: flex;
+	width: 100%;
+	height: 150px;
+	background-color: var(--bitcoin-orange);
+}
+footer section {
+	display: flex;
+	width: 50%;
+	justify-content: center;
+	align-items: center;
+}
+footer .left ul {
+	font-size: 1.4rem;
+	font-weight: 500;
+	line-height: 1.8rem;
+	list-style: none;
+}
+.left li {
+	margin: 10px 0;
+}
+.left a {
+	text-decoration: none;
+	color: var(--just-white);
 }

@@ -122,6 +122,7 @@ main {
 
 .main-exchange-container {
 	width: 100%;
+	min-width: 320px;
 	height: auto;
 	padding-top: 80px;
 	padding-bottom: 30px;
